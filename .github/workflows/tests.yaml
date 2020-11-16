@@ -13,12 +13,12 @@ jobs:
                 with:
                     node-version: '12'
                     check-latest: true
-            -   name: Installing project dependencies
+            name: Installing project dependencies
             -   run: npm ci
-            -   name: Setting up modules
+            name: Setting up modules
             -   run: npm run modules:all
-            -   name: Running unit tests
+            name: Running unit tests
             -   run: npm run test
-            -   name: Running linters
+            name: Running linters
             -   run: npm run lint
 

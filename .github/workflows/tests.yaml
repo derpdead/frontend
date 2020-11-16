@@ -4,7 +4,7 @@ on:
     branches: [ master, develop, test-github-ci-3 ]
 jobs:
   test_pull_request:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2

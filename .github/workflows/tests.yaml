@@ -15,14 +15,14 @@ jobs:
                     check-latest: true
 
             -   name: Installing project dependencies
-                    run: npm ci
+                run: npm ci
 
             -   name: Setting up modules
-                    run: npm run modules:all
+                run: npm run modules:all
 
             -   name: Running unit tests
-                    run: npm run test
+                run: npm run test
 
             -   name: Running linters
-                    run: npm run lint
+                run: npm run lint
 

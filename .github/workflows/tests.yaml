@@ -2,7 +2,7 @@ name: Tests
 
 on:
     pull_request:
-        branches: [ master, develop ]
+        branches: [ master, develop, test-github-ci-2 ]
 
 jobs:
     test_pull_request:

@@ -15,6 +15,7 @@ jobs:
                     check-latest: true
 
             -   name: Installing project dependencies
+
                 run: npm install
 
             -   name: Setting up modules

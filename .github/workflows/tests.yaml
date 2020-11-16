@@ -1,9 +1,7 @@
 name: Tests
-
 on:
   pull_request:
     branches: [ master, develop, test-github-ci-3 ]
-
 jobs:
   test_pull_request:
     runs_on: ubuntu-latest
@@ -13,12 +11,12 @@ jobs:
         with:
           node-version: '12'
           check-latest: true
-      name: Installing project dependencies
-      - run: npm ci
-      name: Setting up modules
-      - run: npm run modules:all
-      name: Running unit tests
-      - run: npm run test
-      name: Running linters
-      - run: npm run lint
+      - name: Installing project dependencies
+        run: npm ci
+      - name: Setting up modules
+        run: npm run modules:all
+      - name: Running unit tests
+        run: npm run test
+      - name: Running linters
+        run: npm run lint
 

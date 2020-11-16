@@ -15,7 +15,7 @@ jobs:
                     check-latest: true
 
             -   name: Installing project dependencies
-                run: npm ci
+                run: npm install
 
             -   name: Setting up modules
                 run: npm run modules:all
